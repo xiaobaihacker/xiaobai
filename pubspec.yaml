@@ -1,0 +1,114 @@
+name: xiaobai
+description: A new Flutter project.
+#配置 pub.dev ，即可将包发布到pub.dev ,防止私人包发布到 pub.dev ,可以配置 none
+publish_to: 'none'
+
+# 以下定义了该应用程序的版本和内部版本号
+# 版本号是由点分隔的三个数字，例如： 1.2.43 后面可以用 + 分隔，跟一个可选的内部版本号，例如：1.2.43+1
+# flutter 中，可以通过分别指定 --build-name 和 --build-number 来覆盖版本号和构建器号
+# 安卓版本控制中, build-name 被用作 versionName， build-number 被用作 versionCode.
+# 安卓版本控制更多信息访问以下网页
+# https://developer.android.com/studio/publish/versioning
+# ios版本控制中, build-name 被用作 CFBundleShortVersionString， build-number 被用作 CFBundleVersion.
+# ios版本控制更多信息访问以下网页
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.19.4 <3.0.0'
+
+# dependencies 导入你需要的其他第三方包
+# 运行 `flutter pub upgrade --major-versions` 或者 手动更新pub.dev上的依赖第三方包的版本号，将依赖升级到最新版本
+# 运行 `flutter pub outdated` 查看哪些依赖项有更新的版本可用
+# ^ 表示有型版本会更新新版本， "" 表示固定版本
+dependencies:
+  flutter:
+    sdk: flutter
+  #用 CupertinoIcons 依赖实现 ios 风格的图标
+  cupertino_icons: ^1.0.2
+  #getx 框架
+  get: ^4.6.5
+  #easyloading 弹窗框
+  flutter_easyloading: ^3.0.5
+  #flutter_screenutil 屏幕适配
+  flutter_screenutil: ^5.7.0
+  #动画生成器 simple_animations 5.0.0+3 
+  simple_animations: ^5.0.0
+  #音频播放器 audioplayers
+  audioplayers: ^3.0.1
+  #地理坐标信息 6.0.0版本以后将位置转换转移到 geocoding中，所以不适用最新的包，使用低版本 （6.0.0以下的包）
+  #测试发现低版本的包 也不能使用 placemark 方法转换地址，会报错，不支持的平台，所以web 端不可用
+  #测试发现使用的是google api, 获取坐标方法会因为网络未科学上网会访问不到 ,web端基于ip 定位，使用天气插件更好
+  geolocator: ^9.0.2
+  #http dio
+  dio: ^5.1.0
+  cookie_jar: ^3.0.1
+  dio_cookie_manager: ^2.0.0
+  #获取ip地址
+  dart_ipify: ^1.1.1
+  #缓存加载文件
+  shared_preferences: ^2.0.6
+  #进度条
+  percent_indicator: ^4.2.3
+  #读写文件
+  path_provider: ^2.0.14
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # 下面的“flutter_lints”包包含一组推荐的 lints，以鼓励良好的编码实践。 软件包提供的 lint 集在位于
+  # 软件包根目录的 analysis_options.yaml 文件中激活。 有关停用特定 lint 规则和激活其他规则的信息，请参阅该文件。
+  flutter_lints: ^2.0.0
+
+# 有关此文件的通用 Dart 部分的信息，请参阅 https://dart.dev/tools/pub/pubspec
+
+# 以下部分特定于 Flutter 包。
+flutter:
+
+  # 以下行确保 Material Icons 字体包含在您的应用程序中，以便您可以使用 Material Icons 类中的图标。
+  uses-material-design: true
+
+  # 添加使用的静态资源使用如下方式：
+  assets:
+     - lib/asset/images/avatar.png
+     - lib/asset/images/dawn.png
+     - lib/asset/images/logo.png
+     - lib/asset/images/localtion.png
+     - lib/asset/sounds/zuowandao.flac
+     - lib/asset/images/zuowandao.jpg
+     - lib/asset/sounds/toxic.flac
+     - lib/asset/images/toxic.jpg
+     - lib/asset/sounds/wellerman.flac
+     - lib/asset/images/wellerman.jpg
+     - lib/datas/sci.json
+     - lib/datas/flu.json
+     - lib/datas/go.json
+     - lib/datas/java.json
+     - lib/datas/person.json
+     - lib/asset/images/v2ray.png
+     - lib/asset/images/easyclash.png
+     - lib/asset/images/qqchat.jpg
+     - lib/asset/images/weichat.jpg
+
+  # 图像资源可以引用一个或多个特定于分辨率的“变体”，请参阅 https://flutter.dev/assets-and-images/#resolution-aware
+
+  # 有关从包依赖项添加静态资源的详细信息，请参阅 https://flutter.dev/assets-and-images/#from-packages
+
+  # 要将自定义字体添加到您的应用程序，请在此处的“flutter”部分中添加一个字体部分。 此列表中的每个条目都应该
+  # 有一个带有字体系列名称的“family”键，以及一个带有列表的“fonts”键，该列表给出了字体的资产和其他描述符。
+  # 例如：
+  fonts:
+   - family: BlogFontsLiuJianmaoCao
+     fonts:
+       - asset: lib/asset/fonts/LiuJianMaoCao-Regular.ttf
+   - family: BlogFontsZhiMangXing
+     fonts:
+       - asset: lib/asset/fonts/ZhiMangXing-Regular.ttf
+   - family: BlogFontsMaShanZheng
+     fonts:
+       - asset: lib/asset/fonts/MaShanZheng-Regular.ttf
+   - family: blogIcons
+     fonts:
+       - asset: lib/asset/icons/iconfont.ttf
+ # 有关包依赖项中字体的详细信息，请参阅：https://flutter.dev/custom-fonts/#from-packages

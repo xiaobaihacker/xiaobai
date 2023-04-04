@@ -1,0 +1,56 @@
+[
+    
+    {
+        "langs":"zh_Cn",
+        "title":"如何科学上网以及科学上网工具",
+        "subTitle":"科学上网",
+        "postTime":"2023-04-04 17:34",
+        "introduce": [
+            "一、windows版本科学上网工具",
+            "v2rayn 下载链接：https://github.com/2dust/v2rayNG/releases",
+            "easyclash 下载链接：https://bulianglin.com/archives/easyclash.html",
+            "clash 下载地址：https://github.com/Fndroid/clash_for_windows_pkg/releases",
+            "clash 下载地址中选择你电脑系统适配的包，查看电脑系统是 32位还是 64位选择合适的下载即可",
+            "二、安卓版本科学上网工具",
+            "v2rayn 下载链接：https://github.com/2dust/v2rayNG/releases",
+            "clash 下载地址：https://github.com/Kr328/ClashForAndroid/releases",
+            "三、v2ray 使用教程",
+            "复制分享的 v2ray - xx- .txt 文件的节点，打开v2ray界面，右键选择从剪贴板导入节点，ctrl+a 全选，右键选择测试服务器真连延迟，查看测试结果，选中低延迟的节点，设为活动服务器，即可打开谷歌 youtube 查看是否能够科学上网",
+            "lib/asset/images/v2ray.png",
+            "四、easyclash 使用教程",
+            "选中分享的 clash - xx - .yaml 文件，拖动到 easyclash 界面，即可导入该节点信息到yaml 配置文件，选中更改系统代理选项，点击启动clash，即可打开谷歌 youtube 查看是否能够科学上网",
+            "lib/asset/images/easyclash.png",
+            "五、优劣分析",
+            "v2ray 手动选择合适的节点 ，适合注册或者某些需要特定节点去做的事情，譬如chatgpt之类使用比较方便节点切换",
+            "easyclash 自动选择合适的节点，适合流媒体播放之类不需要频繁去更改节点的事情，看油管视频使用最佳",
+            "clash 使用方法和easyclash 一样，但是easyclash 是大神不良人做的，体积小，推荐使用这个，clash 功能更多，如果喜欢去研究的各位可以去尝试，基本节点导入方式一样，启动方式也差不多"
+        ]
+    },
+    {
+        "langs":"en_Us",
+        "title":"How to surf the Internet scientifically and scientific Internet tools",
+        "subTitle":"scientific internet",
+        "postTime":"2023-04-04 17:34",
+        "introduce": [
+            "1, the Windows version of the scientific Internet tool",
+            "v2rayn download link:https://github.com/2dust/v2rayNG/releases",
+            "easyclash download link: https://bulianglin.com/archives/easyclash.html",
+            "Clash download link: https://github.com/Fndroid/clash_for_windows_pkg/releases",
+            "Select the package that your computer system is suitable for the clash download address, and check whether the computer system is 32-bit or 64-bit to select the appropriate download",
+            "2, the Android version of scientific Internet tools",
+            "v2rayn download link: https://github.com/2dust/v2rayNG/releases",
+            "Clash download link: https://github.com/Kr328/ClashForAndroid/releases",
+            "3. V2Ray usage tutorial",
+            "Copy the node of the shared v2ray - xx- .txt file, open the v2ray interface, right-click to import node from clipboard, ctrl+a select all, right-click select the test server true connection delay, view the test results, select the node with low latency, set it as the active server, you can open Google YouTube to see whether you can surf the Internet scientifically",
+            "lib/asset/images/v2ray.png",
+            "4. EasyClash Tutorial",
+            "Select the shared clash - xx - .yaml file, drag it to the easyclash interface, you can import the node information to the yaml configuration file, check the change system proxy option, click start clash, you can open Google YouTube to check whether you can surf the Internet scientifically",
+            "lib/asset/images/easyclash.png",
+            "5. Analysis of advantages and disadvantages",
+            "V2ray manually selects the appropriate node, which is suitable for registration or some things that require specific nodes to do, such as chatgpt and other convenient node switching",
+            "easyclash automatically selects the right node, suitable for streaming media and other things that do not need to change nodes frequently, and the best use of YouTube videos",
+            "Clash is used in the same way as easyclash, but easyclash is made by bad people, small size, it is recommended to use this, clash functions more, if you like to study, you can try, the basic node import method is the same, the startup method is similar"
+        ]
+    }
+
+]
